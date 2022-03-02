@@ -18,9 +18,8 @@ const People = () => {
             <div className='card shadow my-2'>
               <div className='card-body'>
                 <h4 className='card-title'>{person.name}</h4>
-                <p className='card-subtitle text-muted'>{person.gender}</p>
-                <p className="card-text">{person.age}</p>
-                <a href={person.url} className="card-link" target="_blank">Link to info</a>
+                
+                <Link to={`/people/${person.id}`} className='btn btn-primary'>More details</Link>
               </div>
             </div>
           </div>

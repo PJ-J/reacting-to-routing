@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { useParams, Link } from "react-router-dom";
+
 
 const Films = () => {
   const [films, setFilms] = useState([]);
@@ -15,17 +17,18 @@ const Films = () => {
         {films.map(film => (
           <div className='col-md-6' key={film.id}>
             <div className='card shadow my-2'>
-              <img src={film.image} className="card-img-top" alt="..." />
               <div className='card-body'>
                 <h4 className='card-title'>{film.title}</h4>
-                <p className='card-subtitle text-muted'>{film.original_title}</p>
-                <p className="card-text">{film.description}</p>
+
+                <p className="card-text">{film.description.substr(0, 75) + "..."}</p>
+                <Link to={`/films/${film.id}`} className='btn btn-primary'>More details</Link>
               </div>
             </div>
           </div>
         ))}
       </section>
     </main>
+
   )
 }
 

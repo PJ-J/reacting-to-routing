@@ -12,7 +12,7 @@ const Home = () => {
                 <div className='card-body'>
                   <h4 className='card-title'>Studio Ghibli API Lab</h4>
                   
-                  <p className="card-text">This lab shows off my React skills.</p>
+                  <p className="card-text">This lab shows off my React routing skills.</p>
                  
                   <a href='https://www.google.com' className="card-link" target="_blank">Link to info</a>
                 </div>

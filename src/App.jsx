@@ -2,10 +2,11 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Films from './pages/Films';
-import Projects from './pages/Projects';
-import Users from './pages/People';
-import UserDetails from './pages/UserDetails';
+import Projects from './pages/FilmDetails';
+import People from './pages/People';
+import PersonDetails from './pages/PersonDetails';
 import Navbar from './components/Navbar'
+import FilmDetails from './pages/FilmDetails';
 
 const App = () => {
   return (
@@ -14,9 +15,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/films/*" element={<Films />}/>
-        <Route path="/projects/*" element={<Projects />}/>
-        <Route path="/people/*" element={<Users />}/>
-        <Route path="/users/:userid/*" element={<UserDetails />}/>
+        <Route path="/films/:filmid/*" element={<FilmDetails />}/>
+        <Route path="/people/*" element={<People />}/>
+        <Route path="/people/:personid/*" element={<PersonDetails />}/>
         
           
         
