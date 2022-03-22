@@ -1,4 +1,4 @@
-import pic from 'C:/Source/reacting-to-routing/src/ghibli.jpg'
+import pic from '../components/assets/ghibli.jpg'
 
 const Home = () => {
     return (
@@ -10,7 +10,7 @@ const Home = () => {
         </div>
         <div className='card text-center shadow my-2'>
                 <div className='card-body'>
-                  <h4 className='card-title'>Studio Ghibli API Lab</h4>
+                  <h4 className='card-title'>Studio Ghibli React Routing Lab</h4>
                   
                   <p className="card-text">This lab shows off my React routing skills.</p>
                  
